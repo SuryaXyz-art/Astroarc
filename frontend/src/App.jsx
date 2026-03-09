@@ -6,7 +6,6 @@ import BirthChart from './components/BirthChart';
 import AIChat from './components/AIChat';
 import Compatibility from './components/Compatibility';
 import AstrologerMarket from './components/AstrologerMarket';
-import PredictionMarket from './components/PredictionMarket';
 import Notifications from './components/Notifications';
 import { getProfile } from './services/api';
 import { Home, MessageCircle, Star, Heart, Users, Activity, Bell, WalletIcon, Sparkles } from 'lucide-react';
@@ -34,7 +33,6 @@ function App() {
     { name: 'Birth Chart', icon: Star },
     { name: 'Compatibility', icon: Heart },
     { name: 'Astrologers', icon: Users },
-    { name: 'Prediction Market', icon: Activity },
     { name: 'AI Astrology Chat', icon: MessageCircle },
     { name: 'Notifications', icon: Bell },
   ];
@@ -62,8 +60,8 @@ function App() {
                 key={item.name}
                 onClick={() => setActiveTab(item.name)}
                 className={`w-full flex items-center gap-4 px-5 py-3.5 rounded-2xl transition-all duration-300 font-medium ${isActive
-                    ? 'bg-gradient-to-r from-purple-600/20 to-pink-600/10 text-purple-300 border border-purple-500/20 shadow-lg shadow-purple-900/20'
-                    : 'text-slate-400 hover:bg-white/5 hover:text-slate-200 border border-transparent'
+                  ? 'bg-gradient-to-r from-purple-600/20 to-pink-600/10 text-purple-300 border border-purple-500/20 shadow-lg shadow-purple-900/20'
+                  : 'text-slate-400 hover:bg-white/5 hover:text-slate-200 border border-transparent'
                   }`}
               >
                 <Icon size={20} className={isActive ? "text-purple-400" : "text-slate-500"} />
@@ -168,8 +166,6 @@ function App() {
                   {activeTab === 'Compatibility' && <Compatibility profile={profile} />}
 
                   {activeTab === 'Astrologers' && <AstrologerMarket walletAddress={walletAddress} />}
-
-                  {activeTab === 'Prediction Market' && <PredictionMarket />}
 
                   {activeTab === 'AI Astrology Chat' && <AIChat profile={profile} />}
 
