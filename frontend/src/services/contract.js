@@ -1,6 +1,7 @@
 import { ethers } from 'ethers';
 
-const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Placeholder after deployment
+// Load from env, or fallback to the deployed arc testnet address
+const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || "0x1FEE1713517C0d33c01E63D3Af8ed4789a3eA1E6";
 
 // Human-readable ABI for AstroReport
 const ASTRO_REPORT_ABI = [
@@ -63,7 +64,8 @@ export const mintChartNFT = async (reportIndex) => {
 };
 
 // --- AstroMarket ---
-const STORE_MARKET_ADDRESS = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"; // Placeholder
+// Deployed AstroMarket Address on Arc Testnet
+const STORE_MARKET_ADDRESS = "0x776B7Bc2086b75ce0603d402C2f1c0655c0A26C7";
 
 const ASTRO_MARKET_ABI = [
     "function registerAstrologer(string _name, uint256 _priceInWei) public",
@@ -77,7 +79,8 @@ export const getAstroMarketContract = async (signerOrProvider) => {
 };
 
 // --- Prediction Market ---
-const PREDICTION_MARKET_ADDRESS = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"; // Placeholder
+// Deployed AstroPrediction Address on Arc Testnet
+const PREDICTION_MARKET_ADDRESS = "0x897A2406C9b2FB897bEBb9Bc7c728b303300F1D4";
 
 const PREDICTION_MARKET_ABI = [
     "function createMarket(string _question, string _aiPredictionSignal) public",

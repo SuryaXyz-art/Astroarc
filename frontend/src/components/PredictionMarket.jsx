@@ -25,12 +25,9 @@ export default function PredictionMarket() {
             setBetting({ ...betting, [marketId]: 'success' });
             alert('Bet placed successfully!');
         } catch (e) {
-            console.error(e);
-            // Fallback UI logic to show success if not deployed
-            setTimeout(() => {
-                setBetting({ ...betting, [marketId]: 'success' });
-                alert('Bet placed via Astro Testnet!');
-            }, 1500);
+            console.error('Betting interaction failed', e);
+            setBetting({ ...betting, [marketId]: 'error' });
+            alert(`Transaction failed: ${e.reason || e.message}`);
         }
     };
 

@@ -1,3 +1,5 @@
 {
-  "AstroReportModule#AstroReport": "0x1FEE1713517C0d33c01E63D3Af8ed4789a3eA1E6"
+  "AstroReportModule#AstroReport": "0x1FEE1713517C0d33c01E63D3Af8ed4789a3eA1E6",
+  "AstroMarketModule#AstroMarket": "0x776B7Bc2086b75ce0603d402C2f1c0655c0A26C7",
+  "AstroPredictionModule#AstroPrediction": "0x897A2406C9b2FB897bEBb9Bc7c728b303300F1D4"
 }

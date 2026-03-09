@@ -50,10 +50,8 @@ export default function AstrologerMarket({ walletAddress }) {
             setBookingStatus({ ...bookingStatus, [astrologer.wallet]: 'success' });
         } catch (err) {
             console.error('Booking failed', err);
-            // Fallback success for UI demo if smart contract isn't deployed on network correctly
-            setTimeout(() => {
-                setBookingStatus({ ...bookingStatus, [astrologer.wallet]: 'success' });
-            }, 1500);
+            setBookingStatus({ ...bookingStatus, [astrologer.wallet]: 'error' });
+            alert(`Booking via MetaMask Failed: ${err.reason || err.message}`);
         }
     };
 
