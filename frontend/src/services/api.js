@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import zodiac from 'zodiac-signs';
-import Astronomy from 'astronomy-engine';
+import * as Astronomy from 'astronomy-engine';
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
 const genAI = new GoogleGenerativeAI(apiKey);
