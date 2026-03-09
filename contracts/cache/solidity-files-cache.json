@@ -1,0 +1,113 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\msi\\Desktop\\AstroArc\\contracts\\contracts\\AstroReport.sol": {
+      "lastModificationDate": 1773000404697,
+      "contentHash": "23c3670e55f320b70213457a5073485f",
+      "sourceName": "contracts/AstroReport.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "AstroReport"
+      ]
+    },
+    "C:\\Users\\msi\\Desktop\\AstroArc\\contracts\\contracts\\AstroMarket.sol": {
+      "lastModificationDate": 1773001376678,
+      "contentHash": "c3e747589625226f807b564b0d112ce7",
+      "sourceName": "contracts/AstroMarket.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "AstroMarket"
+      ]
+    },
+    "C:\\Users\\msi\\Desktop\\AstroArc\\contracts\\contracts\\AstroPrediction.sol": {
+      "lastModificationDate": 1773001444038,
+      "contentHash": "39c74fc594f999f52822c21ee376835b",
+      "sourceName": "contracts/AstroPrediction.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "AstroPrediction"
+      ]
+    }
+  }
+}
