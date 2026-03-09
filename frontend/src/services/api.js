@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import zodiac from 'zodiac-signs';
-import * as Astronomy from 'astronomy-engine';
+import { AstroTime, GeoVector, Ecliptic } from 'astronomy-engine';
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
 const genAI = new GoogleGenerativeAI(apiKey);
@@ -34,9 +34,9 @@ export const generateChart = async (profileData) => {
         // 2. Planet Positions
         const planets = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'];
         const planetPositions = planets.map(body => {
-            const time = new Astronomy.AstroTime(bDate);
-            const pos = Astronomy.GeoVector(body, time, true);
-            const ecliptic = Astronomy.Ecliptic(pos);
+            const time = new AstroTime(bDate);
+            const pos = GeoVector(body, time, true);
+            const ecliptic = Ecliptic(pos);
             return {
                 name: body,
                 longitude: ecliptic.lon,
